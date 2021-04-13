@@ -107,6 +107,7 @@ nav ul {
     background-position: center;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .locations-head {
@@ -123,6 +124,20 @@ nav ul {
     background: linear-gradient(#131C27, #663B34); /*trick to text get the gradient color*/
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.moving-cloud-1 {
+    
+}
+.moving-cloud-2 {
+    top: 20%;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 /*MEDIA QUERY*/
