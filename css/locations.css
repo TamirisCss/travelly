@@ -21,8 +21,8 @@
 }
 .locations-head h3 {
     padding: 3rem 0rem;
-    background: linear-gradient(#131C27, #663B34); /*trick to text get the gradient color*/
-    background-clip: text;
+    background: -webkit-linear-gradient(#131C27, #663B34); /*trick to text get the gradient color*/
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
