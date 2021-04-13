@@ -58,11 +58,15 @@ button:hover {
     background: #131C27;
 }
 
+button:focus {
+    background: #131C27;
+    outline-style: solid;
+    outline-color: salmon;
+}
+
 /*MEDIA QUERY*/
 @media (max-width: 932px) {
     html {
         font-size: 45%;
     }
 }
-
-
