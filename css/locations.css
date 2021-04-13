@@ -1,0 +1,73 @@
+/*LOCATIONS SECTION*/
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url(../img/new-york-page.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /*to hidden the cloud*/
+}
+
+.locations-head {
+    width: 90%; /*trick to position*/
+    margin: auto;
+}
+.locations-head h2 {
+    padding: 2rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+    padding: 3rem 0rem;
+    background: linear-gradient(#131C27, #663B34); /*trick to text get the gradient color*/
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*CLOUDS ANIMATION*/
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    pointer-events: none; /*to not grab the clouds*/
+}
+.moving-cloud-1 {
+    animation: cloundAnimation 5s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+    top: 17%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: cloundAnimation 6s infinite alternate ease-in-out;
+}
+
+@keyframes cloundAnimation {
+    from{
+        transform: translate(5%, -5%);
+    }
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 932px) {
+    .cloud {
+        /* height: 60rem; */
+        width: 130rem;
+    }
+    .moving-cloud-1 {
+        z-index: -1;
+    }
+    .moving-cloud-2 {
+        z-index: -2;
+    }
+    .locations-head h3 {
+        background: rgba(19,28,39,0.9);
+        -webkit-text-fill-color: #FFF;
+        display: inline-block;
+        padding: 1rem;
+    }
+}
