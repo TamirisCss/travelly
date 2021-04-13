@@ -65,6 +65,7 @@ nav {
     margin: auto;
     align-items: center;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
 #logo {
@@ -83,7 +84,7 @@ nav ul {
 
 .hero {
     min-height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), transparent) ,url(./img/landing-page.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5), transparent) ,url(./img/landing-page.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,4 +97,43 @@ nav ul {
 }
 .hero h3 {
     padding: 5rem;
+}
+
+/*LOCATIONS SECTION*/
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url(./img/new-york-page.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.locations-head {
+    width: 90%; /*trick to position*/
+    margin: auto;
+}
+.locations-head h2 {
+    padding: 2rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+    padding: 3rem 0rem;
+    background: linear-gradient(#131C27, #663B34); /*trick to text get the gradient color*/
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 932px) {
+    html {
+        font-size: 45%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
+    }
 }
