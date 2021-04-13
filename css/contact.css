@@ -11,7 +11,7 @@
 
 .form-wrapper {
     background: rgba(19,28,39,0.8);
-    width: 60%;
+    width: 50%;
     color: #FFF;
     border-radius: 20px;
 }
@@ -41,5 +41,11 @@
 
 .form-wrapper input {
     padding: 1rem 3rem;
+}
+
+@media (max-width: 932px) {
+    .form-wrapper {
+        width: 100%;
+    }
 }
 

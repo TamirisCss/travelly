@@ -2,6 +2,9 @@
 .main-head {
     background: #131C27;
     color: #FFF;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 nav {
     min-height: 10vh;

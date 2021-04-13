@@ -1,0 +1,37 @@
+/*FOOTER SECTION*/
+footer {
+    color: #FFF;
+    background: rgba(19,28,39,1);
+}
+
+.footer-wrapper {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 932px) {
+    footer {
+        text-align: center;
+    }
+    footer h5 {
+        padding-bottom: 3rem;
+    }
+}
